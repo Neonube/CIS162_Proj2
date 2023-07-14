@@ -9,7 +9,7 @@ html {
 }
 body{
     display: grid;
-    outline: 2px dashed blue;
+/*    outline: 2px dashed blue;*/
 /*  background: white;
     box-shadow: 10px 10px 10px grey;
     color: black;  
@@ -18,7 +18,7 @@ body{
     border-radius: 2em;*/
 }
 .block > * {
-  outline: 2px dashed red;
+/*  outline: 2px dashed red;*/
 }
 header#g1{
     grid-row: 1;
