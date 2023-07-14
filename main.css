@@ -96,7 +96,7 @@ section#leftColumn{
 }
 section#rightColumn{
     grid-row: 2;
-    grid-column: ;
+    grid-column:4/ ;
     float: left;
     background:lightgray;
     margin: 1em;
