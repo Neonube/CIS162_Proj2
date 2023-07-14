@@ -9,7 +9,8 @@ html {
 }
 body{
     display: grid;
-   /* background: white;
+/*    outline: 2px dashed blue;*/
+/*  background: white;
     box-shadow: 10px 10px 10px grey;
     color: black;  
     padding: 1em 0em 1em 0em;
@@ -17,14 +18,11 @@ body{
     border-radius: 2em;*/
 }
 #block > * {
- /*outline: 2px dashed red;*/
-}
-div#outer{
-    display:grid;
+/*  outline: 2px dashed red;*/
 }
 header#g1{
     grid-row: 1;
-    grid-column: 1 / 3;
+    grid-column: 1/5;
 }
 img#headimg{
     width: 60%;
@@ -32,8 +30,9 @@ img#headimg{
     margin: 0.5em 0em 0em 1em;
 }
 section#block{
+    grid-row:1;
     display:grid;    
-    grid-template-columns:3fr 1fr;
+    grid-template-columns: 25% 25% 25% 25% ;
     background: white;
     box-shadow: 10px 10px 10px grey;
     padding: 0em 0em 01em 0em;
@@ -45,7 +44,6 @@ section#block{
   clear: both;
   display: table;
 }
-
 img.default{
     max-height: 40%; 
     max-width: 40%; 
@@ -56,7 +54,6 @@ img.default{
     max-width: 100%;
     float: left;
 }
-nav{}
 nav > ul {
     box-shadow: 0px 05px 05px lightgray;
     list-style-type: none;
@@ -66,8 +63,7 @@ nav > ul {
     text-align: center;
     overflow:hidden;
     width:100%;
-    border-radius: 0em;
-    
+    border-radius: 0em;  
 }
 nav > ul > li a{
     width:20%;
@@ -81,7 +77,6 @@ nav > ul > li a{
     text-decoration: none;
 }
 a:visited{color:black;}
-
 li a:hover{
     background-color: khaki;/*background box*/
     color:teal;/*text color*/
@@ -90,23 +85,10 @@ li a.active{
     background-color: lightyellow;
     color: teal;
 }
-.leftblock{
-    padding: 1em;
-}
-.leftblock::after{
-    content: "";
-    clear: both;
-    display: table;
-    min-height: length;
-}
-#rightColumn::after{
-  content: "";
-  clear: both;
-  display: table;
-}
 section#leftColumn{
-    grid-row: 2;
-    grid-column: 1;
+    margin: 1em;
+    grid-row: 2/5;
+    grid-column: 1/4;
     float:left;
     width: 100%;
     height:100%;
@@ -116,27 +98,28 @@ section#leftColumn{
     clear: both;
     display: table;
 }
-
 section#rightColumn{
-    grid-row: 2;
-    grid-column: 2;
+    grid-row: 2/5;
+    grid-column: 4/5;
     float: left;
-    width: 100;
     background:lightgray;
     margin: 1em;
+    padding: 1em;
     border-radius: 1em;
     box-shadow:  05px 05px 5px 2px gray ;
-}/*
-#rightColumn::after{
+}
+section#rightColumn::after{
+  content: "";
+  clear: both;
+  display: table;
+}       
+.article::after{
     content: "";
     clear: both;
     display: table;
-}*/
-.article{
-    padding: 1em;
-    display: table;
 }
 footer{
+    grid-row: 2;
     clear:both;
     background: aqua;
     box-shadow: 05px 05px 5px 5px gray;
