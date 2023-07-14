@@ -38,7 +38,7 @@ img#headimg{
     padding: 0em 0em 01em 0em;
     margin: 1em;
     border-radius: 2em;
-    outline:2px dashed green;
+/*    outline:2px dashed green;*/
 }
 #block::after{
   content: "";
