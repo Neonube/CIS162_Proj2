@@ -29,7 +29,7 @@ img#headimg{
     max-width: 550px;
     margin: 0.5em 0em 0em 1em;
 }
-.block{
+#block{
     grid-row:1;
     display:grid;    
     grid-template-columns: 25% 25% 25% 25% ;
@@ -51,7 +51,6 @@ img.default{
     float: left; 
     padding: 10px;
 }
-
 nav > ul {
     box-shadow: 0px 05px 05px lightgray;
     list-style-type: none;
@@ -61,10 +60,12 @@ nav > ul {
     text-align: center;
     overflow:hidden;
     width:100%;
-    border-radius: 0em;  
+    border-radius: 0em; 
+    height:100%;
+
 }
 nav > ul > li a{
-    width:20%;
+    width:14.28%;
     color: teal;
     display:block;
     background-color: gold;
@@ -73,7 +74,7 @@ nav > ul > li a{
     padding: 1em 0em 1em 0em;
     float: left;
     text-decoration: none;
-}
+    }
 a:visited{color:black;}
 li a:hover{
     background-color: khaki;/*background box*/
@@ -82,6 +83,11 @@ li a:hover{
 li a.active{
     background-color: lightyellow;
     color: teal;
+}
+section#main{
+    grid-row:2;
+    grid-column: 1/5;
+    margin: 1em;
 }
 section#leftColumn{
     margin: 1em;
@@ -117,6 +123,48 @@ section#rightColumn::after{
     content: "";
     clear: both;
     display: table;
+}
+input[type=text], select {
+  width: 50%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+    border: lightblue;
+}
+input[type=reset],input[type=submit]{
+    background: teal;
+    color: white;
+    border-style: none;
+    padding: 10px 20px;
+    margin: 5px;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid lightgray;
+  float: left;
+  width: 180px;
+    border-radius: 2em;
+    height: 200px;
+    padding: 25px 0em;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+    max-height:160px;
+    
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 footer{
     grid-row: 2 ;

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- comment -->
+    <meta charset="utf-8">
+    <meta name="keywords"
+          content="terms">
+    <link rel="stylesheet" href="main.css">
+    <title>Chuck's Hobby Hub</title>
+</head>
+<body>
+    <div id="block"> 
+        <header id="g1">
+<!--    <h1>Banner Image</h1>   -->
+            <img src="CHH_logo.png" 
+            id="headimg"
+            alt="Chuck's Hobby Hub" >  
+            <nav>
+                <ul>
+                    <li><a href="https://neonube.github.io/CIS162_Proj2/index.html">Home</a></li>
+                    <li><a href="#">Basic Paintin' Tips</a></li>
+                    <li><a href="#">Advanced Techniques</a></li>
+                    <li><a href="#">Game Reviews</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a class="active" href="https://neonube.github.io/CIS162_Proj2/form.html">Newsletter Signup</a></li>
+                </ul>
+            </nav>
+        </header>
+<!-- Form will have at least 5 fields of your choice, a submit and a reset button-->
+        <section id="main">
+            <form action="#"  autocomplete="on">
+            <fieldset>
+                <legend>Newsletter Signup</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First" autofocus><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="this@that.com" required><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" placeholder="Password"><br>                
+                <p>What are your intrests?</p>
+                <input type="checkbox" id="inter1" name="inter1" value="inter1">
+                <label for="inter1"> Board Games</label><br>
+                <input type="checkbox" id="inter2" name="inter2" value="inter2">
+                <label for="inter2"> Miniatures Games</label><br>
+                <input type="checkbox" id="inter3" name="inter3" value="inter3">
+                <label for="inter3"> Video Games</label><br>
+                <input type="checkbox" id="inter4" name="inter4" value="inter4">
+                <label for="inter4"> Painting Techniques</label><br>
+                 <input type="checkbox" id="inter5" name="inter5" value="inter5">
+                <label for="otherInter"> Other:</label><br>
+                <textarea for="otherInter" rows="5" cols=40></textarea><br><br><br>
+                <input type="reset">
+                <input type="submit" value="Submit"><br><br>    
+            </fieldset>
+            </form> 
+        </section>    
+    </div>     
+    <footer>
+        <p><a href="mailto:chucktf@gmail.com">Contact Email</a></p>
+        <p>Last updated on July 20, 2023</p>
+    </footer>
+</body>   
+</html>
