@@ -61,8 +61,6 @@ nav > ul {
     overflow:hidden;
     width:100%;
     border-radius: 0em; 
-    height:100%;
-
 }
 nav > ul > li a{
     width:14.28%;
@@ -71,7 +69,7 @@ nav > ul > li a{
     background-color: gold;
     text-align: center;
     border-bottom: 1px ;
-    padding: 1em 0em 1em 0em;
+    padding: 12px 0;
     float: left;
     text-decoration: none;
     }
