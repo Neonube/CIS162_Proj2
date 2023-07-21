@@ -122,7 +122,7 @@ section#rightColumn::after{
     clear: both;
     display: table;
 }
-input[type=text], select {
+input[type=text],input[type=password], select {
   width: 50%;
   padding: 10px 15px;
   margin: 8px 0;
@@ -131,7 +131,7 @@ input[type=text], select {
   border-radius: 30px;
   box-sizing: border-box;
 }
-input[type=text]:focus {
+input[type=text]:focus,  input[type=password]:focus {
     background-color: lightblue;
     border: lightblue;
 }
