@@ -57,19 +57,17 @@ nav > ul {
     margin: auto;
     text-align: center;
     overflow:hidden;
-    width:100%;
-    border-radius: 0em; 
+    padding:inherit;
 }
 nav > ul > li a{
     width:14.28%;
     color: teal;
-    display:block;
     background-color: gold;
     text-align: center;
-    border-bottom: 1px ;
-    padding: 12px 0;
+    padding: 12px;
     float: left;
     text-decoration: none;
+    height: inherit;
     }
 a:visited{color:black;}
 li a:hover{
