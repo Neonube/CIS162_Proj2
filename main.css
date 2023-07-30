@@ -1,4 +1,4 @@
-/*Last updated on July 24, 2023*/
+/*Last updated on July 27, 2023*/
 article, aside, figcaption, figure,
 footer, header, main, nav, section {
  display: block;
@@ -60,7 +60,7 @@ nav > ul {
     padding:inherit;
 }
 nav > ul > li a{
-    width:14.28%;
+    width:14.285%;
     color: teal;
     background-color: gold;
     text-align: center;
@@ -68,6 +68,8 @@ nav > ul > li a{
     float: left;
     text-decoration: none;
     height: inherit;
+    margin:inherit;
+    overflow:visible;
     }
 a:visited{color:black;}
 li a:hover{
